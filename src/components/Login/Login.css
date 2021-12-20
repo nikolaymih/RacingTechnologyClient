@@ -1,0 +1,46 @@
+.loginFormWrapper {
+    background-image: url('https://www.startrescue.co.uk/media/d0f176a1-98e8-416b-beff-34dd57b9ee93.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem;
+}
+
+.loginUserForm {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    background: white
+}
+
+.loginUserForm > * {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.loginUserForm > div > input {
+    border: none;
+    border-bottom: 2px solid darkblue;
+    outline: none;
+}
+
+.loginUserForm > h2 {
+    text-align: center;
+}
+
+.loginSubmitter {
+    width: 45%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.loginInputErrors {
+    color: red;
+    text-align: center;
+}

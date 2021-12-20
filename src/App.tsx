@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import HeaderApp from './components/Header/Header';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+
+import { Layout } from 'antd';
 import './App.css';
 
 function App() {
+  const { Header, Footer, Content } = Layout;
+
+  useEffect(() => {
+    
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header style={{ background: 'none', marginBottom: '6rem', padding: '0px', backgroundColor: 'white' }}>
+        <HeaderApp />
+      </Header>
+      <Content>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Racing Technology ©2021 Created by Dancho Danchev</Footer>
+    </Layout>
   );
 }
 
 export default App;
+

@@ -1,0 +1,40 @@
+.information {
+    display: flex;
+    justify-content:space-around;
+    background-color: #f0f2f5;
+
+}
+
+.contacts > * {
+    border: 1px solid grey;
+    border-top: none;
+    border-bottom: none;
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.navigation > * {
+    padding-right: 1.1rem;
+    color: darkslategray;
+    font-size: 1rem;
+}
+
+.authetication > * {
+    padding-right: 1.1rem;
+    color: darkslategray;
+    font-size: 1rem;
+}

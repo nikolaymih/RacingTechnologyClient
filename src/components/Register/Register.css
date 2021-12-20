@@ -1,0 +1,52 @@
+.register-section-wrapper {
+    background-image: url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyJTIwcmVwYWlyfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5rem;
+}
+
+.form-register {
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: darkblue;
+    box-shadow: 2px 2px;
+    background-color: white;
+}
+
+.form-register > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-register > div > input {
+    border:none;
+    border-bottom: 2px solid darkblue;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.form-register > div > label {
+    color: grey
+}
+
+.form-register h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.registerSubmitter {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.registerInputErrors {
+    color: red;
+}
