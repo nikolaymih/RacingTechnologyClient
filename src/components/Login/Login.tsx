@@ -35,7 +35,7 @@ const Login = () => {
                 <p className="loginInputErrors">{errorMessage}</p>
                 <div>
                     <label htmlFor="email" style={{ color: "darkgray" }}>
-                        EMAIL
+                        Email
                     </label>
                     <input type="text" id="email" {...register('email')} />
                     <p className="loginInputErrors">{errors.email?.message}</p>

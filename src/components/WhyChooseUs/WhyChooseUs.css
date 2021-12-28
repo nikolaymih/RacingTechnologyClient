@@ -1,0 +1,33 @@
+.whyChooseUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    font-size: 1.1rem;
+}
+
+.whyChooseUs h3 {
+    font-size: 2rem;
+}
+
+.whyChooseUs p {
+    max-width: 600px;
+    text-align: center;
+}
+
+.whyChooseUs button {
+    background: #1A5DA2;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.chooseUsInfo {
+    display: flex;
+    justify-content: center;
+    padding: 3.5rem
+}
+
+.chooseUsInfo > * {
+    text-align: center;
+}

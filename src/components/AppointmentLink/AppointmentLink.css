@@ -1,0 +1,16 @@
+.appointmentLink {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    /* background-color: #F0F2F5; */
+}
+
+.appointmentLink p {
+    font-size: 1.4rem;
+    padding-right: 2rem;
+}
+
+.appointmentLink button {
+    background: #1E69B8;
+    color: white;
+}

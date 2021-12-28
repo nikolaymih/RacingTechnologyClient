@@ -8,8 +8,8 @@ const HeaderApp: React.FC = () => {
         <>
             <div className='information'>
                 <div className="contacts">
-                    <span>089941981</span>
-                    <span>d.Dancho@gmail.com</span>
+                    <span>+359-887393652</span>
+                    <span>d.dancho@gmail.com</span>
                     <span>Mon-Saturday: 8:30-20:00</span>
                 </div>
                 <div>

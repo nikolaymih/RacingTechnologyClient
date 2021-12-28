@@ -1,0 +1,32 @@
+.prServicesOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
+}
+
+.prServicesOverview p {
+    max-width: 600px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.prServicesOverview h3 {
+    font-size: 2rem;
+}
+
+.prServicesOverview button {
+    background: #1A5DA2;
+    color: white;
+}
+
+.prServicesOverview > * {
+    font-size: 1rem;
+}
+
+.prServicesLink {
+    padding-bottom: 3.5rem;
+}
