@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../store';
+import { useDispatch } from 'react-redux';
+import { createAuthAction } from '../../store/auth.action';
 
+import { IUser } from '../../interfaces/user.interface';
 import './Header.css';
 
 const HeaderApp: React.FC = () => {
+    const { isAuth, username } = useSelector<RootState, IUser>(state => state);
+    const dispatch = useDispatch<AppDispatch>();
+
+    useEffect(() => {
+        dispatch(createAuthAction());
+
+    }, [isAuth, dispatch])
+
     return (
         <>
             <div className='information'>
@@ -27,9 +40,20 @@ const HeaderApp: React.FC = () => {
                     <Link to="/ourteam">Our Team</Link>
                 </div>
                 <div className="authetication">
-                    <Link to="/login">Login</Link>
-                    <Link to="/register">Register</Link>
-                    <Link to="/">Logout</Link>
+                    {isAuth
+                        ? (
+                            <>
+                                <Link to="/createBlogPost">Create Blog</Link>
+                                <Link to="/profile">{username}</Link>
+                                <Link to="/">Logout</Link>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/login">Login</Link>
+                                <Link to="/register">Register</Link>
+                            </>
+                        )
+                    }
                 </div>
             </nav>
         </>

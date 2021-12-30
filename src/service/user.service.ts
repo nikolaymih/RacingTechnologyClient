@@ -40,5 +40,9 @@ export const getUser = async () => {
         withCredentials: true
     });
 
+    if (user.status !== 200) {
+        throw new Error('Forbidden');
+    }
+
     return user;
 }

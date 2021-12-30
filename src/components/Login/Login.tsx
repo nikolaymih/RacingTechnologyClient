@@ -8,8 +8,12 @@ import { Button } from 'antd';
 import './Login.css';
 import { loginInputSchema, LoginUserInput } from '../../validation/authValidation';
 import { loginUser } from '../../service/user.service';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../store';
+import { createAuthAction } from '../../store/auth.action';
 
 const Login = () => {
+    const dispatch = useDispatch<AppDispatch>();
     let [errorMessage, setErrorMessage] = useState('');
     let { register, formState: { errors }, handleSubmit } = useForm<LoginUserInput>({
         resolver: zodResolver(loginInputSchema)
@@ -19,6 +23,8 @@ const Login = () => {
     const loginSubmitHandler = async (values: LoginUserInput) => {
         try {
             await loginUser(values);
+
+            dispatch(createAuthAction());
             
             navigate('/');
         } catch (e: unknown) {
