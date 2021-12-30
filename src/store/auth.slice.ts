@@ -1,11 +1,11 @@
-import {  createSlice, Slice } from "@reduxjs/toolkit";
+import {  createSlice } from "@reduxjs/toolkit";
 
-export const createdAuthReducer: Slice = createSlice({
+export const createdAuthReducer = createSlice({
     name: 'authetication',
     initialState: {
         isAuth: false,
-        username: null,
-        email: null,
+        username: '',
+        email: '',
         isUserLoading: true
     },
     reducers: {
@@ -19,8 +19,8 @@ export const createdAuthReducer: Slice = createSlice({
         },
         removeAuthentication(state) {
             state.isAuth = false;
-            state.username = null;
-            state.email = null;
+            state.username = '';
+            state.email = '';
         }
     }
 })

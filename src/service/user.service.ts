@@ -46,3 +46,11 @@ export const getUser = async () => {
 
     return user;
 }
+
+export const deleteSession = () => {
+    return axios({
+        method: 'DELETE',
+        baseURL: `${url}/api/sessions`,
+        withCredentials: true
+    })
+}

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../store';
 import { useDispatch } from 'react-redux';
-import { createAuthAction } from '../../store/auth.action';
+import { createAuthAction, logoutAuthAction } from '../../store/auth.action';
+import { useNavigate } from 'react-router-dom';
 
 import { IUser } from '../../interfaces/user.interface';
 import './Header.css';
@@ -11,11 +12,20 @@ import './Header.css';
 const HeaderApp: React.FC = () => {
     const { isAuth, username } = useSelector<RootState, IUser>(state => state);
     const dispatch = useDispatch<AppDispatch>();
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(createAuthAction());
 
     }, [isAuth, dispatch])
+
+    const logoutHandler = async (e: React.MouseEvent) => {
+        e.preventDefault();
+
+        await dispatch(logoutAuthAction());
+
+        navigate('/login');
+    }
 
     return (
         <>
@@ -45,7 +55,7 @@ const HeaderApp: React.FC = () => {
                             <>
                                 <Link to="/createBlogPost">Create Blog</Link>
                                 <Link to="/profile">{username}</Link>
-                                <Link to="/">Logout</Link>
+                                <button className="logout" onClick={logoutHandler.bind(this)}>Logout</button>
                             </>
                         ) : (
                             <>

@@ -1,11 +1,11 @@
 .information {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     background-color: #f0f2f5;
 
 }
 
-.contacts > * {
+.contacts>* {
     border: 1px solid grey;
     border-top: none;
     border-bottom: none;
@@ -27,14 +27,23 @@
     font-weight: bold;
 }
 
-.navigation > * {
+.navigation>* {
     padding-right: 1.1rem;
     color: darkslategray;
     font-size: 1rem;
 }
 
-.authetication > * {
+.authetication>* {
     padding-right: 1.1rem;
     color: darkslategray;
     font-size: 1rem;
+}
+
+.logout {
+    border: none;
+    background-color: white;
+}
+
+.logout:hover {
+    color: #8DCFFF;
 }

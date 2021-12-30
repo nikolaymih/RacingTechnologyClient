@@ -1,6 +1,6 @@
 import { AppDispatch } from ".";
 import { IUser } from "../interfaces/user.interface";
-import { getUser } from "../service/user.service";
+import { deleteSession, getUser } from "../service/user.service";
 import { authAction } from "./auth.slice";
 
 export const createAuthAction = () => {
@@ -10,10 +10,23 @@ export const createAuthAction = () => {
             const user: IUser = response.data;
 
             dispatch(authAction.configureAuth(user), );
-            dispatch(authAction.isUserLoading({}));
+            dispatch(authAction.isUserLoading());
         } catch (error) {
-            dispatch(authAction.removeAuthentication({}))
-            dispatch(authAction.isUserLoading({}));
+            dispatch(authAction.removeAuthentication())
+            dispatch(authAction.isUserLoading());
         }
     }
 }
+
+export const logoutAuthAction = () => {
+    return async (dispatch: AppDispatch) => {
+        try {
+            await deleteSession();
+
+            dispatch(authAction.removeAuthentication());
+        } catch (error) {
+            
+        }
+    }
+}
+
