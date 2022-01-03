@@ -7,11 +7,15 @@ import Main from './components/Main/Main';
 import FooterApp from './components/Footer/Footer';
 import FooterCopyRight from './components/FooterCopyRight/FooterCopyRight';
 import CreateBlogPost from './components/CreateBlogPost/CreateBlogPost';
-import AppGuard from './components/AppGuard/AppGuard';
+import PrivateGuard from './components/PrivateGuard/PrivateGuard';
+
+import Profile from './components/Profile/Profile';
+import CarServices from './components/CarServices/Services';
 
 import { Layout } from 'antd';
 import './App.css';
-import Profile from './components/Profile/Profile';
+import PublicGuard from './components/PublicGuard/PublicGuard';
+import Appointment from './components/Appointment/Appointment';
 
 function App() {
   const { Header, Footer, Content } = Layout;
@@ -23,18 +27,28 @@ function App() {
       </Header>
       <Content>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={
+            <PublicGuard >
+              <Main />
+            </PublicGuard>
+          } />
+          <Route path="services" element={
+            <PublicGuard >
+              <CarServices />
+            </PublicGuard>
+          } />
+          <Route path="/appointment" element={<Appointment />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/createBlogPost" element={
-            <AppGuard>
+            <PrivateGuard>
               <CreateBlogPost />
-            </AppGuard>
+            </PrivateGuard>
           } />
           <Route path="/profile" element={
-            <AppGuard>
+            <PrivateGuard>
               <Profile />
-            </AppGuard>
+            </PrivateGuard>
           } />
         </Routes>
       </Content>

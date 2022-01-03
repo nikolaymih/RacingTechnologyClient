@@ -9,18 +9,17 @@ export const createdAuthReducer = createSlice({
         isUserLoading: true
     },
     reducers: {
-        isUserLoading(state) {
-            state.isUserLoading = !state.isUserLoading;
-        },
         configureAuth(state, action) {
             state.isAuth = true;
             state.username = action.payload.name;
             state.email = action.payload.email;
+            state.isUserLoading = !state.isUserLoading;
         },
         removeAuthentication(state) {
             state.isAuth = false;
             state.username = '';
             state.email = '';
+            state.isUserLoading = !state.isUserLoading;
         }
     }
 })

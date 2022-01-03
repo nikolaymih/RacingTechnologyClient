@@ -9,11 +9,9 @@ export const createAuthAction = () => {
             const response = await getUser();
             const user: IUser = response.data;
 
-            dispatch(authAction.configureAuth(user), );
-            dispatch(authAction.isUserLoading());
+            dispatch(authAction.configureAuth(user));
         } catch (error) {
             dispatch(authAction.removeAuthentication())
-            dispatch(authAction.isUserLoading());
         }
     }
 }
@@ -21,11 +19,13 @@ export const createAuthAction = () => {
 export const logoutAuthAction = () => {
     return async (dispatch: AppDispatch) => {
         try {
+            //delete tokens from backend
             await deleteSession();
-
+            //reset the user store to initial;    
             dispatch(authAction.removeAuthentication());
         } catch (error) {
-            
+            // write potential error pop up message.
+            dispatch(authAction.removeAuthentication());
         }
     }
 }

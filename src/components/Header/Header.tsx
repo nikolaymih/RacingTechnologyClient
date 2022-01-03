@@ -16,7 +16,7 @@ const HeaderApp: React.FC = () => {
 
     useEffect(() => {
         dispatch(createAuthAction());
-
+        
     }, [isAuth, dispatch])
 
     const logoutHandler = async (e: React.MouseEvent) => {
@@ -43,7 +43,7 @@ const HeaderApp: React.FC = () => {
                 <h2>Racing Technology</h2>
                 <div className='navigation'>
                     <Link to="/">Home</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/services">Services</Link>
                     <Link to="/appointment">Appointment</Link>
                     <Link to="/appointment">Gallery</Link>
                     <Link to="/appointment">Personal Blog</Link>
