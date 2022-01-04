@@ -1,26 +1,25 @@
-import {  createSlice, Slice } from "@reduxjs/toolkit";
+import {  createSlice } from "@reduxjs/toolkit";
 
-export const createdAuthReducer: Slice = createSlice({
+export const createdAuthReducer = createSlice({
     name: 'authetication',
     initialState: {
         isAuth: false,
-        username: null,
-        email: null,
+        username: '',
+        email: '',
         isUserLoading: true
     },
     reducers: {
-        isUserLoading(state) {
-            state.isUserLoading = !state.isUserLoading;
-        },
         configureAuth(state, action) {
             state.isAuth = true;
             state.username = action.payload.name;
             state.email = action.payload.email;
+            state.isUserLoading = !state.isUserLoading;
         },
         removeAuthentication(state) {
             state.isAuth = false;
-            state.username = null;
-            state.email = null;
+            state.username = '';
+            state.email = '';
+            state.isUserLoading = !state.isUserLoading;
         }
     }
 })

@@ -1,0 +1,54 @@
+.makeAppointment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+}
+
+.makeAppointment h3 {
+    font-size: 3rem;
+}
+
+.makeAppointment > p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.vehicleInfo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem
+}
+
+.vehicleInfoInputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicleInfoInputLabel {
+    background-color: #F5F5F5;
+    width: 300px;
+    padding: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.vehicleInfoInput {
+    border: 1px solid lightgray;;
+    padding: 0.8rem;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.appointmentInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.servicesCheckBox {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+.carServices {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.carServicesHeading {
+    background-color: #F5F5F5;
+    flex-shrink: 1;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.carServicesInfo {
+    margin-inline: auto;
+    padding: 3rem 0rem;
+}
+
+.carServiceFirstRow {
+    margin-bottom: 2rem;
+}

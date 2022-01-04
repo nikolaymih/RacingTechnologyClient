@@ -6,11 +6,11 @@ import { AppDispatch, RootState } from '../../store';
 import { createAuthAction } from "../../store/auth.action";
 
 type Props = {
-    children: JSX.Element
+    children: JSX.Element,
 }
 
-const AppGuard = ({ children }: Props) => {
-    const { isAuth, isUserLoading } = useSelector<RootState, IUser>(state => state);
+const PrivateGuard = ({ children }: Props) => {
+    const { isAuth } = useSelector<RootState, IUser>(state => state);
     const dispatch = useDispatch<AppDispatch>();
 
     useEffect(() => {
@@ -18,11 +18,12 @@ const AppGuard = ({ children }: Props) => {
 
     }, [isAuth, dispatch])
 
-    if (!isAuth && !isUserLoading) {
-        return <Navigate to="/login" />
-    }
+    return (
+        isAuth
+            ? children
+            : <Navigate to="/login" />
+    );
 
-    return children;
 }
 
-export default AppGuard;
+export default PrivateGuard;
