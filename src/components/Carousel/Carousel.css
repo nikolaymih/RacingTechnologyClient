@@ -8,7 +8,7 @@
     font-size: 2.2rem;
     color: white;
     bottom: 50%;
-    left: 28%;
+    left: 38%;
     right: 20%;
 }
 
@@ -16,6 +16,13 @@
     position: absolute;
     color: white;
     bottom: 35%;
-    left: 28%;
+    left: 36%;
     right: 20%;
+}
+
+.carouselItem > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block
 }

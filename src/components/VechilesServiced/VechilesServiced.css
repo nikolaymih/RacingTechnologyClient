@@ -1,28 +1,40 @@
 .vechilesServiced {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: center;*/
+}
+
+.vechilesPicture {
+    flex-grow: 4;
+}
+
+.vechilesPicture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .vechilesInformation {
     display: flex;
+    flex-grow: 2;
     flex-direction: column;
+    /*align-items: center;*/
     justify-content: center;
     margin: 0 1%;
     text-align: center; 
 }
 
 .vechilesInformation > h3 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .vechilesInformation > p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .modelTypes {
     display: flex;
     justify-content: space-around;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .ModelTypesSection {
