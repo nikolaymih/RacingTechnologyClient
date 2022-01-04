@@ -4,6 +4,8 @@
     align-items: center;
     gap: 1rem;
     background-color: white;
+    margin-top: 4rem;
+    padding-top: 3rem
 }
 
 .makeAppointment h3 {
@@ -15,7 +17,7 @@
     font-size: 1rem;
 }
 
-.vehicleInfo {
+.appointmentVehicleInfo {
     display: flex;
     justify-content: space-evenly;
     gap: 5rem
@@ -24,6 +26,7 @@
 .vehicleInfoInputWrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .vehicleInfoInputLabel {
@@ -35,20 +38,67 @@
 }
 
 .vehicleInfoInput {
-    border: 1px solid lightgray;;
+    border: 1px solid lightgray;
     padding: 0.8rem;
-    width: 300px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.appointmentDateInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.vehicleDateInfoInputWrapper {
+    flex-grow: 1;
+}
+
+.appointmentDateInfoInput {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 0.8rem;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.appointmentInfo {
+.servicesCheckBoxWrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 5rem;
+    flex-wrap: wrap;
 }
 
 .servicesCheckBox {
     display: flex;
     align-items: center;
+    border: 2px solid lightgrey;
+    width: max-content;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.appointmentContactsDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.appointmentContactInput {
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.appointmentContactTextArea {
+    border: 1px solid lightgrey;
+    padding: 0.5rem;
+}
+
+.appointmentContactsButton {
+    justify-content: center;
+    font-size: medium;
+    margin-top: 2rem;
+    height: 8%;
 }

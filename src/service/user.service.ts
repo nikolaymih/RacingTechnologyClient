@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-import { LoginUserInput, RegisterUserInput } from "../validation/authValidation";
+import {LoginUserInput, RegisterUserInput} from "../validation/authValidation";
 
 const url = `${process.env.REACT_APP_SERVERENDPOINT}`;
 
 export const createUser = async (values: RegisterUserInput) => {
-    const createdUser = await axios({
+    await axios({
         method: 'POST',
         baseURL: `${url}/api/user`,
         data: {
@@ -15,12 +15,10 @@ export const createUser = async (values: RegisterUserInput) => {
             passwordConfirmation: values.rePassword
         }
     });
-
-    return createdUser;
 }
 
 export const loginUser = async (values: LoginUserInput) => {
-    const user = await axios({
+    await axios({
         method: 'POST',
         baseURL: `${url}/api/sessions`,
         data: {
@@ -29,8 +27,6 @@ export const loginUser = async (values: LoginUserInput) => {
         },
         withCredentials: true
     });
-
-    return user;
 }
 
 export const getUser = async () => {
