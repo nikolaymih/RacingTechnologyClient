@@ -1,0 +1,26 @@
+.appointmentVehicleInfo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem
+}
+
+.vehicleInfoInputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.vehicleInfoInputLabel {
+    background-color: #F5F5F5;
+    width: 300px;
+    padding: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.vehicleInfoInput {
+    border: 1px solid lightgray;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}

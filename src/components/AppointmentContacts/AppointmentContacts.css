@@ -1,0 +1,25 @@
+.appointmentContactsDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.appointmentContactInput {
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.appointmentContactTextArea {
+    border: 1px solid lightgrey;
+    padding: 0.5rem;
+}
+
+.appointmentContactsButton {
+    justify-content: center;
+    font-size: medium;
+    margin-top: 2rem;
+    height: 8%;
+}
