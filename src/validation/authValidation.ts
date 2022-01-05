@@ -11,7 +11,7 @@ export const registerInputSchema = object({
         message: 'Password should be at least 6 characters'
     }),
     rePassword: string().min(6, {
-        message: 'Password should be at least 6 charachters'
+        message: 'Password should be at least 6 characters'
     })
 }).refine((data) => data.password === data.rePassword, {
     message: 'Passwords should match',
