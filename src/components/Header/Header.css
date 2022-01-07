@@ -1,8 +1,8 @@
 .information {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #f0f2f5;
-
 }
 
 .contacts>* {
@@ -11,6 +11,16 @@
     border-bottom: none;
     padding: 1rem;
     margin-bottom: 50px;
+}
+
+.shoppingCard {
+    font-size: 2.5rem !important;
+    vertical-align:middle;
+    color: black
+}
+
+.shoppingCard:hover {
+    color: #40A9FF;
 }
 
 .container {

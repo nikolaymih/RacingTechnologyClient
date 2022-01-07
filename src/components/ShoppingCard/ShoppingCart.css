@@ -1,0 +1,114 @@
+.shoppingCartSection {
+    display: flex;
+    margin:  7rem 10rem;
+    /*justify-content: space-evenly;*/
+}
+
+.cartProductsDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+.cartProductsHeaders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.cartProductsDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cartSingleProductInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3.5rem;
+}
+
+.cartSingleProductDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+.cartSingleProductDetails > img {
+    max-width: 5rem;
+    max-height: 5rem;
+    padding-right: 1rem;
+}
+
+.cartSingleProductDetails > h4 {
+    max-width: 3rem;
+    max-height: 8rem;
+}
+
+.cartSingleProductQuantity > button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+}
+
+.cartSingleProductQuantity > button:hover {
+    color: #1E69B8;
+}
+
+.cartSingleProductQuantity > input {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.cartSingleProductInfo > div > input {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.cartOrderCheckout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #E9E9E9;
+    padding: 1rem 3rem;
+    max-width: 20rem;
+    font-weight: bold;
+}
+
+.cartOrderCheckout > h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+
+.cartOrderProductsInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartOrderTotalPrice {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 2px solid grey;
+}
+
+.cartOrderCheckout > * {
+    margin-bottom: 2rem;
+}
+
+.continueShopping {
+    color: #3B12FF;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.continueShoppingArrow {
+    vertical-align: bottom;
+}

@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6614f954-9426-44ca-bf4d-3479612b916c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Appointment/Appointment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Appointment/Appointment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppointmentContacts/AppointmentContacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppointmentContacts/AppointmentContacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppointmentVehicleInfo/AppointmentVehicleInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppointmentVehicleInfo/AppointmentVehicleInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validation/authValidation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validation/authValidation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +41,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RacingTechnologyApi" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="C:\Users\NikolayM\WebstormProjects\RacingTechnologyClient\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NikolayM\WebstormProjects\RacingTechnologyClient\src\components\Stripe" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +63,9 @@
       <workItem from="1641294306473" duration="37000" />
       <workItem from="1641294421591" duration="11915000" />
       <workItem from="1641368202933" duration="3820000" />
-      <workItem from="1641372076289" duration="17551000" />
+      <workItem from="1641372076289" duration="18186000" />
+      <workItem from="1641459117360" duration="2253000" />
+      <workItem from="1641541691883" duration="18921000" />
     </task>
     <servers />
   </component>

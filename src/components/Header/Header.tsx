@@ -1,22 +1,24 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../store';
-import { useDispatch } from 'react-redux';
-import { createAuthAction, logoutAuthAction } from '../../store/auth.action';
-import { useNavigate } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {Link} from 'react-router-dom';
+import {useSelector} from 'react-redux';
+import {AppDispatch, RootState} from '../../store';
+import {useDispatch} from 'react-redux';
+import {createAuthAction, logoutAuthAction} from '../../store/auth.action';
+import {useNavigate} from 'react-router-dom';
 
-import { IUser } from '../../interfaces/user.interface';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+
+import {IUser} from '../../interfaces/user.interface';
 import './Header.css';
 
 const HeaderApp: React.FC = () => {
-    const { isAuth, username } = useSelector<RootState, IUser>(state => state);
+    const {isAuth, username} = useSelector<RootState, IUser>(state => state);
     const dispatch = useDispatch<AppDispatch>();
     const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(createAuthAction());
-        
+
     }, [isAuth, dispatch])
 
     const logoutHandler = async (e: React.MouseEvent) => {
@@ -36,7 +38,9 @@ const HeaderApp: React.FC = () => {
                     <span>Mon-Saturday: 8:30-20:00</span>
                 </div>
                 <div>
-                    <span>search</span>
+                    <Link to="/shoppingCard" >
+                        <ShoppingCartOutlinedIcon className="shoppingCard"/>
+                    </Link>
                 </div>
             </div>
             <nav className='container'>

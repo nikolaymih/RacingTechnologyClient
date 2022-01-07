@@ -16,6 +16,7 @@ import { Layout } from 'antd';
 import './App.css';
 import PublicGuard from './components/PublicGuard/PublicGuard';
 import Appointment from './components/Appointment/Appointment';
+import ShoppingCart from "./components/ShoppingCard/ShoppingCart";
 
 function App() {
   const { Header, Footer, Content } = Layout;
@@ -27,14 +28,20 @@ function App() {
       </Header>
       <Content>
         <Routes>
+
           <Route path="/" element={
             <PublicGuard >
               <Main />
             </PublicGuard>
           } />
-          <Route path="services" element={
+          <Route path="/services" element={
             <PublicGuard >
               <CarServices />
+            </PublicGuard>
+          } />
+          <Route path="/shoppingCard" element={
+            <PublicGuard >
+              <ShoppingCart />
             </PublicGuard>
           } />
           <Route path="/appointment" element={<Appointment />} />
