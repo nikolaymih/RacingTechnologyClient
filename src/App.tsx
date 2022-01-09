@@ -14,9 +14,11 @@ import CarServices from './components/CarServices/Services';
 
 import { Layout } from 'antd';
 import './App.css';
+
 import PublicGuard from './components/PublicGuard/PublicGuard';
 import Appointment from './components/Appointment/Appointment';
 import ShoppingCart from "./components/ShoppingCard/ShoppingCart";
+import StripeContainer from "./components/Stripe/StripeContainer/StripeContainer";
 
 function App() {
   const { Header, Footer, Content } = Layout;
@@ -57,6 +59,12 @@ function App() {
               <Profile />
             </PrivateGuard>
           } />
+          <Route path="/checkoutPayment" element={
+            <PublicGuard >
+              <StripeContainer />
+            </PublicGuard>
+          } />
+
         </Routes>
       </Content>
       <Footer style={{ textAlign: 'center', padding: 0 }}>

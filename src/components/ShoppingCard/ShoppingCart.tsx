@@ -22,7 +22,7 @@ const ShoppingCart = () => {
                         <div className="cartSingleProductDetails">
                             <img
                                 src="https://medina-med.com/files/tyres/0-01-05-0-0-03-1-0731.jpg"
-                                alt="no image"
+                                alt="no"
                             />
                             <h4>MICHELIN 165/65R14</h4>
                         </div>
@@ -38,7 +38,7 @@ const ShoppingCart = () => {
                         <div className="cartSingleProductDetails">
                             <img
                                 src="https://m.media-amazon.com/images/I/612sNJ+2VVL._AC_UY327_FMwebp_QL65_.jpg"
-                                alt="no image"
+                                alt="no"
                             />
                             <h4>Momo MOM11150085221</h4>
                         </div>
@@ -54,7 +54,7 @@ const ShoppingCart = () => {
                         <div className="cartSingleProductDetails">
                             <img
                                 src="https://s.alicdn.com/@sc04/kf/H387729b82bdd42ffbf6ddbcbeed90bf85.jpg_300x300.jpg"
-                                alt="no image"
+                                alt="no"
                             />
                             <h4>BMW 320 Car Engine</h4>
                         </div>
@@ -68,7 +68,7 @@ const ShoppingCart = () => {
                     </div>
                 </article>
                 <Link to="/services" className="continueShopping">
-                    <ArrowBackIcon className="continueShoppingArrow" />Continue Shopping
+                    <ArrowBackIcon className="continueShoppingArrow"/>Continue Shopping
                 </Link>
             </article>
 
@@ -90,7 +90,9 @@ const ShoppingCart = () => {
                     <p>Total Price:</p>
                     <p>2238lv</p>
                 </div>
-                <Button size="large">CHECKOUT</Button>
+                <Link to="/checkoutPayment">
+                    <Button size="large">CHECKOUT</Button>
+                </Link>
             </article>
         </section>
     )

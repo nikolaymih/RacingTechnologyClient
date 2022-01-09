@@ -1,5 +1,5 @@
 import './AppointmentVehicleInfo.css';
-import React, {HTMLInputTypeAttribute} from "react";
+import React from "react";
 
 // export interface AppointmentProps extends React.PropsWithoutRef<JSX.IntrinsicElements["input"]> {
 //     error: string | undefined;

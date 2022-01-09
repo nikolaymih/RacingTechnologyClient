@@ -1,6 +1,6 @@
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
-import {object, string, number, date, TypeOf} from "zod";
+import {object, string, TypeOf} from "zod";
 import {Button} from "antd";
 
 import AppointmentVehicleInfo from "../AppointmentVehicleInfo/AppointmentVehicleInfo";
