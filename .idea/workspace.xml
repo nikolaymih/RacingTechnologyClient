@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6614f954-9426-44ca-bf4d-3479612b916c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Appointment/Appointment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Appointment/Appointment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppointmentVehicleInfo/AppointmentVehicleInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppointmentVehicleInfo/AppointmentVehicleInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCard/ShoppingCart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCard/ShoppingCart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stripe/CardElement/CardSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stripe/CardElement/CardSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Stripe/CheckoutForm/CheckoutForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stripe/CheckoutForm/CheckoutForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Stripe/CheckoutForm/CheckoutForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stripe/CheckoutForm/CheckoutForm.tsx" afterDir="false" />
     </list>
@@ -43,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RacingTechnologyApi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="C:\Users\nim96\WebstormProjects\RacingTechnologyClient\node_modules\typescript\lib" />
@@ -53,6 +48,27 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\NikolayM\WebstormProjects\RacingTechnologyClient\src\components\Stripe" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.">
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug." />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +84,8 @@
       <workItem from="1641372076289" duration="18186000" />
       <workItem from="1641459117360" duration="2253000" />
       <workItem from="1641541691883" duration="18921000" />
-      <workItem from="1641745773328" duration="10797000" />
+      <workItem from="1641745773328" duration="10989000" />
+      <workItem from="1641841297135" duration="7202000" />
     </task>
     <servers />
   </component>
@@ -85,5 +102,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Stripe/CheckoutForm/CheckoutForm.tsx</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

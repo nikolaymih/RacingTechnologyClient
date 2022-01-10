@@ -1,4 +1,4 @@
-import {CardElement, CardExpiryElement, PaymentElement, PaymentRequestButtonElement} from '@stripe/react-stripe-js';
+import {CardElement} from '@stripe/react-stripe-js';
 
 const CARD_ELEMENT_OPTIONS = {
     hidePostalCode: true,
