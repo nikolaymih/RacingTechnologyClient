@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { registerInputSchema, RegisterUserInput } from '../../validation/authValidation';
+import { registerInputSchema, RegisterUserInput } from '../../validation/auth.validation';
 import { createUser } from '../../service/user.service';
 
 import { Button } from 'antd';

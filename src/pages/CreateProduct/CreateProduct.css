@@ -1,0 +1,58 @@
+.createProductSection {
+    margin-top: 4rem;
+    padding: 3rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.createProductForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.createProductInputWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.createProductSingleInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.createProductLabel {
+    background-color: #F5F5F5;
+    width: 300px;
+    padding: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.createProductInput {
+    border: 1px solid lightgray;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.createProductButton {
+    border: 1px solid lightgrey;
+    padding: 0.5rem;
+    background-color: #1890ff;
+    color: white;
+    max-width: 15rem;
+    margin-inline: auto;
+}
+
+.createProductButton:hover {
+    background-color: lightskyblue;
+}
+
+.createProductErrors {
+    color: red;
+}

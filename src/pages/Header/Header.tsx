@@ -48,16 +48,18 @@ const HeaderApp: React.FC = () => {
                 <div className='navigation'>
                     <Link to="/">Home</Link>
                     <Link to="/services">Services</Link>
+                    <Link to="/shop">Shop</Link>
                     <Link to="/appointment">Appointment</Link>
                     <Link to="/appointment">Gallery</Link>
                     <Link to="/appointment">Personal Blog</Link>
-                    <Link to="/ourteam">Our Team</Link>
+                    <Link to="/our-team">Our Team</Link>
                 </div>
                 <div className="authetication">
                     {isAuth
                         ? (
                             <>
-                                <Link to="/createBlogPost">Create Blog</Link>
+                                <Link to="/createBlogPost">Create Service</Link>
+                                <Link to="/createProduct">Create Product</Link>
                                 <Link to="/profile">{username}</Link>
                                 <button className="logout" onClick={logoutHandler.bind(this)}>Logout</button>
                             </>

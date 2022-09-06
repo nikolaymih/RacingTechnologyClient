@@ -1,24 +1,27 @@
 import { Routes, Route } from 'react-router-dom';
 
-import HeaderApp from './components/Header/Header';
-import Login from './components/Login/Login';
-import Register from './components/Register/Register';
-import Main from './components/Main/Main';
-import FooterApp from './components/Footer/Footer';
-import FooterCopyRight from './components/FooterCopyRight/FooterCopyRight';
-import CreateBlogPost from './components/CreateBlogPost/CreateBlogPost';
-import PrivateGuard from './components/PrivateGuard/PrivateGuard';
+import HeaderApp from './pages/Header/Header';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Main from './pages/Main/Main';
+import FooterApp from './pages/Footer/Footer';
+import FooterCopyRight from './pages/FooterCopyRight/FooterCopyRight';
+import CreateBlogPost from './pages/CreateBlogPost/CreateBlogPost';
+import PrivateGuard from './pages/PrivateGuard/PrivateGuard';
 
-import Profile from './components/Profile/Profile';
-import CarServices from './components/CarServices/Services';
+import Profile from './pages/Profile/Profile';
+import CarServices from './pages/CarServices/Services';
 
 import { Layout } from 'antd';
-import './App.css';
+import './App.scss';
 
-import PublicGuard from './components/PublicGuard/PublicGuard';
-import Appointment from './components/Appointment/Appointment';
-import ShoppingCart from "./components/ShoppingCard/ShoppingCart";
-import StripeContainer from "./components/Stripe/StripeContainer/StripeContainer";
+import PublicGuard from './pages/PublicGuard/PublicGuard';
+import Appointment from './pages/Appointment/Appointment';
+import ShoppingCart from "./pages/ShoppingCard/ShoppingCart";
+import StripeContainer from "./pages/Stripe/StripeContainer/StripeContainer";
+import Shop from "./pages/Shop/Shop";
+import CreateProduct from "./pages/CreateProduct/CreateProduct";
+import ShopProductDetails from "./pages/Shop/ShopProductDetails/ShopProductDetails";
 
 function App() {
   const { Header, Footer, Content } = Layout;
@@ -47,11 +50,18 @@ function App() {
             </PublicGuard>
           } />
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:id" element={<ShopProductDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/createBlogPost" element={
             <PrivateGuard>
               <CreateBlogPost />
+            </PrivateGuard>
+          } />
+          <Route path="/createProduct" element={
+            <PrivateGuard>
+              <CreateProduct />
             </PrivateGuard>
           } />
           <Route path="/profile" element={

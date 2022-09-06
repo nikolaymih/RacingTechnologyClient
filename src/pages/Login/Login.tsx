@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from 'antd';
 
 import './Login.css';
-import { loginInputSchema, LoginUserInput } from '../../validation/authValidation';
+import { loginInputSchema, LoginUserInput } from '../../validation/auth.validation';
 import { loginUser } from '../../service/user.service';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../store';

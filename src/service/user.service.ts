@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {LoginUserInput, RegisterUserInput} from "../validation/authValidation";
+import {LoginUserInput, RegisterUserInput} from "../validation/auth.validation";
 
 const url = `${process.env.REACT_APP_SERVERENDPOINT}`;
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -13,6 +15,7 @@ ReactDOM.render(
       <BrowserRouter>
         <App />
       </BrowserRouter>
+        <ToastContainer />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

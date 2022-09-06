@@ -4,8 +4,7 @@ import './CheckoutForm.css'
 import axios from "axios";
 
 import React, {useEffect, useState} from "react";
-import {useStripe, useElements, CardElement} from '@stripe/react-stripe-js'
-import { StripeCardNumberElement } from '@stripe/stripe-js';
+import {useStripe, useElements} from '@stripe/react-stripe-js'
 
 const url = `${process.env.REACT_APP_SERVERENDPOINT}`;
 
@@ -23,6 +22,16 @@ const style = {
         },
     },
 };
+
+// const cardBrandToPfClass = {
+//     'visa': 'pf-visa',
+//     'mastercard': 'pf-mastercard',
+//     'amex': 'pf-american-express',
+//     'discover': 'pf-discover',
+//     'diners': 'pf-diners',
+//     'jcb': 'pf-jcb',
+//     'unknown': 'pf-credit-card',
+// }
 
 const CheckoutForm = () => {
     const [errorMessage, setErrorMessage] = useState('');
@@ -51,6 +60,7 @@ const CheckoutForm = () => {
     const submitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        console.log(e);
         try {
             setIsProcessing(true);
 
@@ -68,7 +78,7 @@ const CheckoutForm = () => {
                 }
             })
 
-            const card = elements.getElement('cardNumber');
+            const card = elements.getElement('card');
 
             if (!card) {
                 setIsProcessing(false);
@@ -107,6 +117,11 @@ const CheckoutForm = () => {
             }
         }
     }
+
+    const onCardNumberChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        console.log(e.currentTarget.value);
+    }
+
     return (
         <section className="checkoutPayment">
             <form onSubmit={submitHandler}>
@@ -116,7 +131,12 @@ const CheckoutForm = () => {
                     <h3>The amount that you will be charged is 2239</h3>
                     <label>
                         <span>Card number</span>
-                        <input id="card-number-element" className="field" placeholder="1234 1234 1234 1234"/>
+                        <input
+                            id="card-number-element"
+                            className="field"
+                            placeholder="1234 1234 1234 1234"
+                            onChange={onCardNumberChangeHandler}
+                        />
                         <span className="brand"><i className="pf pf-credit-card" id="brand-icon"/></span>
                     </label>
                     <label>

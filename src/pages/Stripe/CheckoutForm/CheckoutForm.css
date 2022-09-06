@@ -1,0 +1,77 @@
+/*.checkoutPayment {*/
+/*    max-width: 35%;*/
+/*    margin-inline: auto;*/
+/*    margin-top: 5rem;*/
+/*    margin-bottom: 5rem;*/
+/*    background-color: white;*/
+/*    padding: 3rem;*/
+/*    box-shadow: 2px 2px lightgrey;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.group {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.group > h2, h3 {*/
+/*    text-align: center;*/
+/*    margin-bottom: 4rem;*/
+/*}*/
+
+/*label {*/
+/*    position: relative;*/
+/*    color: #8898AA;*/
+/*    font-weight: 300;*/
+/*    height: 40px;*/
+/*    line-height: 40px;*/
+/*    margin-left: 20px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    border-bottom: 1px solid lightgrey;*/
+/*}*/
+
+/*label > span {*/
+/*    width: 120px;*/
+/*    text-align: right;*/
+/*    margin-right: 30px;*/
+/*}*/
+
+/*label > span.brand {*/
+/*    width: 30px;*/
+/*}*/
+
+/*.field {*/
+/*    background: transparent;*/
+/*    font-weight: 300;*/
+/*    border: 0;*/
+/*    color: #31325F;*/
+/*    outline: none;*/
+/*    flex: 1;*/
+/*    padding-right: 10px;*/
+/*    padding-left: 10px;*/
+/*    cursor: text;*/
+/*}*/
+
+/*button {*/
+/*    background: #666EE8;*/
+/*    color: white;*/
+/*    box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.10), 0 3px 6px 0 rgba(0, 0, 0, 0.08);*/
+/*    border-radius: 4px;*/
+/*    border: 0;*/
+/*    margin-top: 20px;*/
+/*    font-size: 15px;*/
+/*    font-weight: 400;*/
+/*    width: 100%;*/
+/*    height: 40px;*/
+/*    line-height: 38px;*/
+/*    outline: none;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: blue*/
+/*}*/
+
+/*button:active {*/
+/*    background: #43458B;*/
+/*}*/
