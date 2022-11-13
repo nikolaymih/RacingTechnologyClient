@@ -11,6 +11,19 @@ import ignitionSystem from '../assets/images/Ignition system.jpg';
 import fuelFilter from '../assets/images/Fuel Filter.jpg';
 import GasketsAndSeals from '../assets/images/GasketsAndSeals.jpg';
 
+import audi from '../assets/images/car-models/audi.jpg';
+import bmw from '../assets/images/car-models/bmw.png';
+import mercedes from '../assets/images/car-models/mercedes.jpg';
+import alfaRomeo from '../assets/images/car-models/alfa-romeo.png';
+import opel from '../assets/images/car-models/opel.png';
+import citroen from '../assets/images/car-models/citroen.png';
+import renault from '../assets/images/car-models/renault.svg';
+import peugeot from '../assets/images/car-models/peugeot.png';
+import dacia from '../assets/images/car-models/dacia.jpg';
+import seat from '../assets/images/car-models/seat.png';
+import skoda from '../assets/images/car-models/skoda.png';
+import toyota from '../assets/images/car-models/toyota.png';
+
 export type ShopProductsCategories = {
     [key: string]: {
         id: number,
@@ -19,65 +32,128 @@ export type ShopProductsCategories = {
     }
 }
 
-export const shopProductsCategories: ShopProductsCategories = {
-    filters: {
+export const shopCarModels: ShopProductsCategories = {
+    audi: {
         id: 1,
-        name: 'Filters',
-        image: filters
+        name: 'Parts Audi',
+        image: audi
     },
-    brakingSystem: {
+    bmw: {
         id: 2,
-        name: 'Braking system',
-        image: brakingSystem
+        name: 'Parts BMW',
+        image: bmw
     },
-    transmission: {
+    mercedes: {
         id: 3,
-        name: 'Transmission',
-        image: transmission
+        name: 'Parts Mercedes-Benz',
+        image: mercedes
     },
-    suspension: {
+    alfaRomeo: {
         id: 4,
-        name: 'Suspension',
-        image: suspension
+        name: 'Parts Alfa Romeo',
+        image: alfaRomeo
     },
-    steeringSystem: {
+    opel: {
         id: 5,
-        name: 'Steering system',
-        image: steeringSystem
+        name: 'Parts Opel',
+        image: opel
     },
-    clutchAndFlywheel: {
+    citroen: {
         id: 6,
-        name: 'Clutch and flywheel',
-        image: clutchAndFlywheel
+        name: 'Parts Citroen',
+        image: citroen
     },
-    beltDrive: {
+    renault: {
         id: 7,
-        name: 'Belt drive',
-        image: beltDrive
+        name: 'Parts Renault',
+        image: renault
     },
-    gear: {
+    peugeot: {
         id: 8,
-        name: 'Gear',
-        image: gear
+        name: 'Parts Peugeot',
+        image: peugeot
     },
-    coolingSystem: {
+    dacia: {
         id: 9,
-        name: 'Cooling system',
-        image: coolingSystem
+        name: 'Parts Dacia',
+        image: dacia
     },
-    ignitionSystem: {
+    seat: {
         id: 10,
-        name: 'Ignition system',
-        image: ignitionSystem
+        name: 'Parts Seat',
+        image: seat
     },
-    fuelFilter: {
+    skoda: {
         id: 11,
-        name: 'Fuel Filter',
-        image: fuelFilter
+        name: 'Parts Skoda',
+        image: skoda
     },
-    GasketsAndSeals: {
+    toyota: {
         id: 12,
-        name: 'Gaskets and seals',
-        image: GasketsAndSeals
+        name: 'Parts Toyota',
+        image: toyota
     },
 }
+
+// export const shopProductsCategories: ShopProductsCategories = {
+//     filters: {
+//         id: 1,
+//         name: 'Filters',
+//         image: filters
+//     },
+//     brakingSystem: {
+//         id: 2,
+//         name: 'Braking system',
+//         image: brakingSystem
+//     },
+//     transmission: {
+//         id: 3,
+//         name: 'Transmission',
+//         image: transmission
+//     },
+//     suspension: {
+//         id: 4,
+//         name: 'Suspension',
+//         image: suspension
+//     },
+//     steeringSystem: {
+//         id: 5,
+//         name: 'Steering system',
+//         image: steeringSystem
+//     },
+//     clutchAndFlywheel: {
+//         id: 6,
+//         name: 'Clutch and flywheel',
+//         image: clutchAndFlywheel
+//     },
+//     beltDrive: {
+//         id: 7,
+//         name: 'Belt drive',
+//         image: beltDrive
+//     },
+//     gear: {
+//         id: 8,
+//         name: 'Gear',
+//         image: gear
+//     },
+//     coolingSystem: {
+//         id: 9,
+//         name: 'Cooling system',
+//         image: coolingSystem
+//     },
+//     ignitionSystem: {
+//         id: 10,
+//         name: 'Ignition system',
+//         image: ignitionSystem
+//     },
+//     fuelFilter: {
+//         id: 11,
+//         name: 'Fuel Filter',
+//         image: fuelFilter
+//     },
+//     GasketsAndSeals: {
+//         id: 12,
+//         name: 'Gaskets and seals',
+//         image: GasketsAndSeals
+//     },
+// }

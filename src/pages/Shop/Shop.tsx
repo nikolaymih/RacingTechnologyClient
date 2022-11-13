@@ -5,22 +5,24 @@ import Product from "../../interfaces/product.interface";
 import {notifyError} from "../../utils/notifiers";
 import {LoadingSpinner} from "../../components/loaders/LoadingSpinner";
 import ShopSingleProduct from "./ShopSingleProduct/ShopSingleProduct.";
-import {ShopProductsCategories, shopProductsCategories} from "../../constants";
+import {ShopProductsCategories, shopCarModels} from "../../constants";
 
 const Shop = () => {
     const [loading, setLoading] = useState<boolean>(false);
     const [products, setProducts] = useState<Product[]>([{
-        _id: '',
-        name: '',
+        title: '',
+        model: '',
         image: '',
-        price: 0
+        price: 0,
+        category: '',
+        description: ''
     }]);
     useEffect(() => {
         setLoading(true);
         const fetchProducts = async (): Promise<void> => {
             try {
                 const fetchedProducts = await getProductsService();
-
+                console.log(fetchedProducts);
                 setProducts(fetchedProducts.data);
                 setLoading(false);
             } catch (e: unknown) {
@@ -41,11 +43,12 @@ const Shop = () => {
                 <h4>Parts</h4>
                 <div className="shop-categories">
                     {
-                        Object.keys(shopProductsCategories).map((category: keyof typeof shopProductsCategories) => {
+                        Object.keys(shopCarModels).map((category: keyof typeof shopCarModels) => {
                             return (
-                                <div key={shopProductsCategories[category].id} className="shop-single-category">
-                                    <h1>{shopProductsCategories[category].name}</h1>
-                                    <img src={shopProductsCategories[category].image} alt="no image"/>
+                                <div key={shopCarModels[category].id} className="shop-single-category">
+                                    <img src={shopCarModels[category].image} alt="no image"/>
+                                    <h1>{shopCarModels[category].name}</h1>
+                                    <i className="fas fa-duotone fa-arrow-right" />
                                 </div>
                             )
                         })

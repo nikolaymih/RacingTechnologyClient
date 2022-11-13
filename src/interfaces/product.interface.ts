@@ -1,6 +1,8 @@
 export default interface Product  {
-    _id: string,
-    name: string,
+    title: string,
+    model: string,
     image: string,
-    price: number
+    price: number,
+    category: string,
+    description?: string
 }

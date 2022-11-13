@@ -20,7 +20,7 @@ import Appointment from './pages/Appointment/Appointment';
 import ShoppingCart from "./pages/ShoppingCard/ShoppingCart";
 import StripeContainer from "./pages/Stripe/StripeContainer/StripeContainer";
 import Shop from "./pages/Shop/Shop";
-import CreateProduct from "./pages/CreateProduct/CreateProduct";
+import CreateProduct from "./pages/Shop/CreateProduct/CreateProduct";
 import ShopProductDetails from "./pages/Shop/ShopProductDetails/ShopProductDetails";
 
 function App() {

@@ -17,6 +17,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .createProductSingleInput {
@@ -55,4 +56,10 @@
 
 .createProductErrors {
     color: red;
+}
+
+@media screen and (max-width: 972px) {
+    .createProductInputWrapper {
+        flex-direction: column;
+    }
 }
